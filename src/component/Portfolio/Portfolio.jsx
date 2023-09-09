@@ -5,7 +5,7 @@ const Portfolio = () => {
             <div className="w-50">
                 <p data-aos="fade-down-right" className="text-center mt-10 font-semibold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-[#7E48EB] to-[#FF67FF]">Our Works - Portfolio</p>
             </div>
-            <div>
+            <div className='mx-5' >
                 <div data-aos="fade-down-right" className="carousel w-full mt-10">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img src="work1.jpg" className="w-full h-[200px] lg:h-[500px]" />
