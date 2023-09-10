@@ -7,7 +7,7 @@ const Technology = () => {
                     <p className="text-center mt-10 font-semibold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-[#7E48EB] to-[#FF67FF]">Technology we use</p>
                 </div>
             </div>
-            <div  data-aos="zoom-in" className='flex justify-center'>
+            <div  className='flex justify-center'>
                 <div className='flex justify-center mt-5 border-t-2 border-b-2 border-[#CFAB5B] w-[350px] lg:w-[700px]'>
                     <div className='w-[700px]'>
                         <marquee className="mt-5">
