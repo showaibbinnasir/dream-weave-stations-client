@@ -33,7 +33,7 @@ const Services = () => {
                                 <p className="text-center mt-5 font-semibold text-white text-sm lg:text-xl to-[#FF67FF] textshadow">Banner Design</p>
                             </div>
                         </div>
-                        <p className="text-center text-white text-xs lg:text-sm">Our logo design process is a seamless journey, from initial concept to final execution.</p>
+                        <p className="text-center text-white text-xs lg:text-sm">Design engaging banners with vivid colors, messaging, eye-catching visuals for maximum impact.</p>
                         <div className="flex justify-center">
                             <button className="btn w-[150px] h-[10px] bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] text-white border-[#CFAB5B] scale-75">Book Now</button>
                         </div>
@@ -48,7 +48,7 @@ const Services = () => {
                                 <p className="text-center mt-5 font-semibold text-transparent text-sm lg:text-xl bg-clip-text bg-gradient-to-r from-[#7E48EB] to-[#FF67FF] ">Video & Reels</p>
                             </div>
                         </div>
-                        <p className="text-center text-white text-xs lg:text-sm">Our logo design process is a seamless journey, from initial concept to final execution.</p>
+                        <p className="text-center text-white text-xs lg:text-sm">Create captivating videos and reels to share stories, entertain, and engage your audience effectively.</p>
                         <div className="flex justify-center">
                             <button className="btn w-[150px] h-[10px] bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] text-white border-[#CFAB5B] scale-75">Book Now</button>
                         </div>
@@ -63,7 +63,7 @@ const Services = () => {
                                 <p className="text-center mt-5 font-semibold text-white text-sm lg:text-xl to-[#FF67FF] textshadow">Development</p>
                             </div>
                         </div>
-                        <p className="text-center text-white text-xs lg:text-sm">Our logo design process is a seamless journey, from initial concept to final execution.</p>
+                        <p className="text-center text-white text-xs lg:text-sm">Software powers modern life, enabling efficiency, connectivity, and innovation across diverse industries worldwide.</p>
                         <div className="flex justify-center">
                             <button className="btn w-[150px] h-[10px] bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] text-white border-[#CFAB5B] scale-75">Book Now</button>
                         </div>
