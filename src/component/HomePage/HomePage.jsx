@@ -1,3 +1,4 @@
+import Contact from "../Contact/Contact";
 import Coordinator from "../Coordinator/Coordinator";
 import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
@@ -12,6 +13,7 @@ const HomePage = () => {
             <Coordinator></Coordinator>
             <Portfolio></Portfolio>
             <Technology></Technology>
+            <Contact></Contact>
         </div>
     );
 };
