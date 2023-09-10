@@ -1,5 +1,6 @@
 import Contact from "../Contact/Contact";
 import Coordinator from "../Coordinator/Coordinator";
+import Footer from "../Footer/Footer";
 import Portfolio from "../Portfolio/Portfolio";
 import Services from "../Services/Services";
 import Technology from "../Technology/Technology";
@@ -14,6 +15,7 @@ const HomePage = () => {
             <Portfolio></Portfolio>
             <Technology></Technology>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

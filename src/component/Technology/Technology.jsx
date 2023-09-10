@@ -12,39 +12,39 @@ const Technology = () => {
                     <div className='w-[700px]'>
                         <marquee className="mt-5">
                             <div className="flex items-center gap-5 marqimage">
-                                <img src="html.png" alt="" />
-                                <img src="css.svg" alt="" />
-                                <img src="bootstrap.png" alt="" />
-                                <img src="tailwind.png" alt="" />
-                                <img src="js.png" alt="" />
-                                <img src="es6.png" alt="" />
-                                <img src="react.png" alt="" />
-                                <img src="daisy.png" alt="" />
-                                <img src="aos.gif" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="html.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="css.svg" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="bootstrap.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="tailwind.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="js.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="es6.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="react.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="daisy.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="aos.gif" alt="" />
                             </div>
                         </marquee>
                         <marquee direction="right" className="mt-5">
                             <div className="flex items-center gap-5 marqimage">
-                                <img src="node.png" alt="" />
-                                <img src="ex.webp" alt="" />
-                                <img src="mongo.webp" alt="" />
-                                <img src="rest.webp" alt="" />
-                                <img src="stripe.png" alt="" />
-                                <img src="ts.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="node.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="ex.webp" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="mongo.webp" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="rest.webp" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="stripe.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="ts.png" alt="" />
 
                             </div>
                         </marquee>
                         <marquee className="mt-5">
                             <div className="flex items-center gap-5 marqimage">
-                                <img src="photoshop.png" alt="" />
-                                <img src="illus.svg" alt="" />
-                                <img src="pro.png" alt="" />
-                                <img src="xd.png" alt="" />
-                                <img src="github.png" alt="" />
-                                <img src="vercel.png" alt="" />
-                                <img src="netlify.svg" alt="" />
-                                <img src="vite.svg" alt="" />
-                                <img src="npm.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="photoshop.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="illus.svg" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="pro.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="xd.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="github.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="vercel.png" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="netlify.svg" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="vite.svg" alt="" />
+                                <img className=' w-[40px] lg:w-[70px]' src="npm.png" alt="" />
                             </div>
                         </marquee>
                     </div>
