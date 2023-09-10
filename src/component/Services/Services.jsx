@@ -8,7 +8,7 @@ const Services = () => {
             </div>
             <div className="flex justify-center mt-5">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-10">
-                    <div data-aos="zoom-out-right" className=" w-[150px] h-[300px] lg:w-[200px] lg:h-[320px] bg-gradient-to-r from-[#34256C] to-[#612E8D] rounded-2xl border-2 border-[#CFAB5B] p-3">
+                    <div  data-aos="zoom-out" className=" w-[150px] h-[300px] lg:w-[200px] lg:h-[320px] bg-gradient-to-r from-[#34256C] to-[#612E8D] rounded-2xl border-2 border-[#CFAB5B] p-3">
                         <div data-aos="flip-up"data-aos-easing="ease-out-cubic"
      data-aos-duration="1000" className="flex justify-center">
                             <img src="gp.png" className="w-20" alt="" />
@@ -53,7 +53,7 @@ const Services = () => {
                             <button className="btn w-[150px] h-[10px] bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] text-white border-[#CFAB5B] scale-75">Book Now</button>
                         </div>
                     </div>
-                    <div data-aos="zoom-out-left" className="w-[150px] h-[300px] lg:w-[200px] lg:h-[320px] bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] rounded-2xl border-2 border-[#CFAB5B] p-3">
+                    <div data-aos="zoom-out" className="w-[150px] h-[300px] lg:w-[200px] lg:h-[320px] bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] rounded-2xl border-2 border-[#CFAB5B] p-3">
                     <div data-aos="flip-down"data-aos-easing="ease-out-cubic"
      data-aos-duration="1000" className="flex justify-center">
                             <img src="dev.png" className="w-20" alt="" />

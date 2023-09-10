@@ -37,8 +37,11 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
+            <div className="flex justify-center">
+                        <button data-aos="fade-down-right" className="btn w-[150px] h-[10px] bg-gradient-to-r from-[#34256C] to-[#612E8D] text-white border-2 border-[#CFAB5B] mt-2">Show All</button>
+                    </div>
         </div>
     );
 };
-// 
+//  
 export default Portfolio;
