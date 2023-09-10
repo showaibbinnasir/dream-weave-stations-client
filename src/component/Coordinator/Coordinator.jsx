@@ -1,7 +1,7 @@
 const Coordinator = () => {
     return (
         <div>
-            <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-[50px] lg:gap-[100px] mt-16">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-[5px] lg:gap-[100px] mt-16">
                 <div data-aos="zoom-out-down">
                     <img src="coordinates.png" className=" w-[250px] h-[270px] lg:w-[330px] lg:h-[350px]" alt="" />
                 </div>
