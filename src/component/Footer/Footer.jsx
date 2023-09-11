@@ -1,5 +1,4 @@
 
-
 const Footer = () => {
     return (
         <div className="flex justify-center bg-gradient-to-r from-[#2C2366] to-[#662E91] mt-10">
@@ -21,6 +20,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            
         </div>
     );
 };

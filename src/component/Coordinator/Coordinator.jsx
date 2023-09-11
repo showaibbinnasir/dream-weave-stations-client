@@ -1,3 +1,5 @@
+import Modal from "../Modal/Modal";
+
 const Coordinator = () => {
     return (
         <div>
@@ -11,7 +13,7 @@ const Coordinator = () => {
                         <p data-aos="fade-up" className=" w-[350px] lg:w-[500px] text-center text-black"> Our four coordinators are experts in web development, graphics design, and more, ensuring that we can meet all your creative needs under one roof.</p>
                     </div>
                     <div data-aos="fade-up-right" className="flex justify-center">
-                        <button className="btn w-[150px] h-[10px] bg-gradient-to-r from-[#34256C] to-[#612E8D] text-white border-[#CFAB5B] scale-75">Book Now</button>
+                        <Modal></Modal>
                     </div>
                 </div>
             </div>
