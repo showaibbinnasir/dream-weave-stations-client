@@ -1,6 +1,6 @@
 const Services = () => {
     return (
-        <div className="mx-10">
+        <div id="services" className="mx-10">
             <div className="flex justify-center">
                 <div data-aos="fade-down-right" className="w-50">
                     <p className="text-center mt-10 font-semibold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-[#7E48EB] to-[#FF67FF]">Our Services</p>

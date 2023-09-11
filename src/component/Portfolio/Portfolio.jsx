@@ -2,7 +2,7 @@ import './style.css'
 const Portfolio = () => {
     return (
         <div>
-            <div className="w-50">
+            <div id='portfolio' className="w-50">
                 <p data-aos="fade-down-right" className="text-center mt-10 font-semibold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-[#7E48EB] to-[#FF67FF]">Our Works - Portfolio</p>
             </div>
             <div className='mx-5' >

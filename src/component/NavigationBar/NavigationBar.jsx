@@ -9,10 +9,10 @@ const NavigationBar = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gradient-to-r from-[#33256C] to-[#652E90] rounded-box w-52 text-white">
-                        <li><a className="text-xl">Home</a></li>
-                        <li><a className="text-xl">Services</a></li>
-                        <li><a className="text-xl">Portfolio</a></li>
-                        <li><a className="text-xl">Contact</a></li>
+                        <li><a href='#home' className="text-xl">Home</a></li>
+                        <li><a href='#services' className="text-xl">Services</a></li>
+                        <li><a href='#portfolio' className="text-xl">Portfolio</a></li>
+                        <li><a href='#contact' className="text-xl">Contact</a></li>
 
                     </ul>
                 </div>
@@ -23,10 +23,10 @@ const NavigationBar = () => {
             </div>
             <div className="navbar-end text-white hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li className=' hover:bg-[#CFAB5B]  hover:rounded-lg'><a className="text-xl"><p className='textshadow'>Home</p></a></li>
-                    <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><a className="text-xl textshadow">Services</a></li>
-                    <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><a className="text-xl  textshadow">Portfolio</a></li>
-                    <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><a className="text-xl  textshadow">Contact</a></li>
+                    <li className=' hover:bg-[#CFAB5B]  hover:rounded-lg'><a href='#home' className="text-xl"><p className='textshadow'>Home</p></a></li>
+                    <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><a href='#services' className="text-xl textshadow">Services</a></li>
+                    <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><a href='#portfolio' className="text-xl  textshadow">Portfolio</a></li>
+                    <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><a href='#contact' className="text-xl  textshadow">Contact</a></li>
                 </ul>
             </div>
             

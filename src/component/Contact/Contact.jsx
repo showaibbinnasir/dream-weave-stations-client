@@ -1,7 +1,7 @@
 const Contact = () => {
     return (
         <div>
-            <div data-aos="fade-down-right" className="flex justify-center">
+            <div id="contact" data-aos="fade-down-right" className="flex justify-center">
                 <div className="w-50">
                     <p className="text-center mt-10 font-semibold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-[#7E48EB] to-[#FF67FF]">Contact</p>
                 </div>

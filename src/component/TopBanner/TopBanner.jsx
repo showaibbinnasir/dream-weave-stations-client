@@ -1,6 +1,6 @@
 const TopBanner = () => {
     return (
-        <div className="flex justify-center h-[600px] bg-gradient-to-r from-[#33256C] to-[#652E90]">
+        <div id="home" className="flex justify-center h-[600px] bg-gradient-to-r from-[#33256C] to-[#652E90]">
             <div className="flex flex-col-reverse lg:flex-row gap-[50px] lg:gap-[150px] items-center mb-24 lg:mt-0">
                 <div className="text-center">
                     <p  data-aos="fade-up" className="font-semibold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-[#7E48EB] to-[#FF67FF]">Dream Weave Stations</p>
