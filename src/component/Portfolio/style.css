@@ -1,7 +1,47 @@
 .imageSize {
-    height: 500px;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 20px;
+
+}
+
+.swiper {
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+
+}
+
+@media only screen and (max-width:668px) {
+  .swiper {
     width: 100%;
+
+  }
+
+  .swiper-slide {
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+
+  }
+}
+
+@media only screen and (min-Width:669px) and (max-width:1080px) {
+  .swiper {
+    width: 80%;
+
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+
+  }
 
 }

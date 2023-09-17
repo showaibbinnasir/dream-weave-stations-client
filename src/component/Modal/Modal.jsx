@@ -11,8 +11,8 @@ const Modal = () => {
                     <p className="text-center text-xs">or press [esc] to cancel</p>
                     <div>
                         <ul className="steps mt-3">
-                            <li className="step step-primary">Book</li>
-                            <li className="step step-primary">Add details</li>
+                            <li className="step step-warning">Book</li>
+                            <li className="step step-warning">Add details</li>
                             <li className="step">Confirm</li>
                             <li className="step">Receive Order</li>
                         </ul>
