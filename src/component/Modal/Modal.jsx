@@ -1,4 +1,19 @@
+
+
 const Modal = () => {
+    
+    const formData = (event) => {
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const category = form.category.value;
+        const phone = form.phone.value;
+        const email = form.email.value;
+        const formData = {name, category, phone, email}
+        console.log(formData);
+    }
+    
+    
     return (
         <div>
             <div className="flex justify-center">
@@ -8,7 +23,14 @@ const Modal = () => {
             <dialog id="my_modal_2" className="modal ">
                 <div className="modal-box bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] text-white">
                     <p className="text-lg font-semibold text-center">Please add order details here...</p>
-                    <p className="text-center text-xs">or press [esc] to cancel</p>
+                    <p className="text-center text-xs hidden lg:block">or press [esc] to cancel</p>
+                    <div className="modal-action scale-50 block lg:hidden">
+                        <form method="dialog">
+
+                            {/* if there is a button in form, it will close the modal */}
+                            <button className="btn btn-circle">X</button>
+                        </form>
+                    </div>
                     <div>
                         <ul className="steps mt-3">
                             <li className="step step-warning">Book</li>
@@ -17,15 +39,54 @@ const Modal = () => {
                             <li className="step">Receive Order</li>
                         </ul>
                     </div>
-                    <div className="alert bg-gradient-to-r from-[#B83CB9] border-0 shadow-xl to-[#7C47E7] mt-5 text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span>Currently this part is under construction. Available soon.</span>
+
+                    <div>
+                        <form onSubmit={formData} className="card-body text-black">
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text text-white">Your name</span>
+                                </label>
+                                <input type="text" name="name" placeholder="text" className="input input-bordered bg-white" />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text text-white">Order Category</span>
+                                </label>
+                                <select name="category" className="select select-warning bg-white w-full max-w-xs">
+                                    <option disabled selected>Select a Category</option>
+                                    <option>Logo Design</option>
+                                    <option>Banner Design</option>
+                                    <option>Poster Design</option>
+                                    <option>Ui/Ux</option>
+                                    <option>Web Application</option>
+                                    <option>Web Design</option>
+                                </select>
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text text-white">Your phone</span>
+                                </label>
+                                <input name="phone" type="text" placeholder="text" className="input input-bordered bg-white" />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text text-white">Your email</span>
+                                </label>
+                                <input name="email" type="email" placeholder="text" className="input input-bordered bg-white" />
+                            </div>
+                            <div className="form-control mt-6">
+                                <button type="submit" className="btn btn-primary bg-[#CFAB5B]">Place Order</button>
+                            </div>
+                        </form>
                     </div>
+
                 </div>
                 <form method="dialog" className="modal-backdrop">
                     <button>close</button>
                 </form>
+
             </dialog>
+            
         </div>
     );
 };
