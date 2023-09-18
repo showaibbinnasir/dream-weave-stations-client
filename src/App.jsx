@@ -15,7 +15,11 @@ function App() {
     <>
       <RouterProvider router={router}>
       </RouterProvider>
-      <Toaster/>
+      <Toaster toastOptions={{
+        style : {
+          zIndex : 999
+        }
+      }} />
     </>
   )
 }
