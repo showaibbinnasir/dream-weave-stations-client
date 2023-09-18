@@ -1,25 +1,43 @@
+import { useState } from "react";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+
 
 
 const Modal = () => {
-    
+    const [isLoading, setIsLoading] = useState(false);
+    const navigate = useNavigate()
     const formData = (event) => {
         event.preventDefault();
+        setIsLoading(true);
         const form = event.target;
         const name = form.name.value;
         const category = form.category.value;
         const phone = form.phone.value;
         const email = form.email.value;
-        const formData = {name, category, phone, email}
-        console.log(formData);
+        const formData = { name, category, phone, email }
+        fetch("https://dream-weave-stations-server.vercel.app/addorders", {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                setIsLoading(false);
+                toast.success("Order Placed Successfully")
+                window.location.href = "https://dreamweavestations.netlify.app/";
+            })
     }
-    
+
     
     return (
         <div>
             <div className="flex justify-center">
                 <button onClick={() => document.getElementById('my_modal_2').showModal()} className="btn w-[150px] h-[10px] bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] text-white border-[#CFAB5B] scale-75">Book Now</button>
             </div>
-
             <dialog id="my_modal_2" className="modal ">
                 <div className="modal-box bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] text-white">
                     <p className="text-lg font-semibold text-center">Please add order details here...</p>
@@ -75,7 +93,11 @@ const Modal = () => {
                                 <input name="email" type="email" placeholder="text" className="input input-bordered bg-white" />
                             </div>
                             <div className="form-control mt-6">
-                                <button type="submit" className="btn btn-primary bg-[#CFAB5B]">Place Order</button>
+                                {
+                                    isLoading ? <button disabled className="btn btn-primary bg-[#CFAB5B]"><span className="loading loading-bars loading-md"></span></button> :
+                                        <button type="submit" className="btn btn-primary bg-[#CFAB5B]">Place Order</button>
+                                }
+
                             </div>
                         </form>
                     </div>
@@ -86,7 +108,7 @@ const Modal = () => {
                 </form>
 
             </dialog>
-            
+                                
         </div>
     );
 };
