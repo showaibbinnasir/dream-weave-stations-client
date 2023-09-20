@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Toaster } from 'react-hot-toast';
+
 function App() {
   useEffect(() => {
     AOS.init();
@@ -15,11 +16,7 @@ function App() {
     <>
       <RouterProvider router={router}>
       </RouterProvider>
-      <Toaster toastOptions={{
-        style : {
-          zIndex : 999
-        }
-      }} />
+      <Toaster />
     </>
   )
 }

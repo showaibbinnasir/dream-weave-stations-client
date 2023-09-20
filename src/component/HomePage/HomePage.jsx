@@ -1,3 +1,4 @@
+
 import Contact from "../Contact/Contact";
 import Coordinator from "../Coordinator/Coordinator";
 import Footer from "../Footer/Footer";
@@ -6,7 +7,9 @@ import Services from "../Services/Services";
 import Technology from "../Technology/Technology";
 import TopBanner from "../TopBanner/TopBanner";
 
+
 const HomePage = () => {
+    
     return (
         <div>
             <TopBanner></TopBanner>
@@ -16,6 +19,7 @@ const HomePage = () => {
             <Technology></Technology>
             <Contact></Contact>
             <Footer></Footer>
+            
         </div>
     );
 };

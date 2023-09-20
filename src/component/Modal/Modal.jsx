@@ -1,17 +1,11 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
 
-
-
-
-
-
-
-
 const Modal = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     const formData = (event) => {
+
         event.preventDefault();
         setIsLoading(true);
         const form = event.target;
@@ -19,24 +13,41 @@ const Modal = () => {
         const category = form.category.value;
         const phone = form.phone.value;
         const email = form.email.value;
-        const formData = { name, category, phone, email }
-        fetch("https://dream-weave-stations-server.vercel.app/addorders", {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                setIsLoading(false);
-                toast.success("Order Placed Successfully")
-                setTimeout(() => {
-                    window.location.href = "https://dreamweavestations.netlify.app/";
-                }, 2000)
-
+        const confirmation = false;
+        if (confirm(`Place Order?
+                    Name: ${name}
+                    category : ${category}
+                    phone : ${phone}
+                    email : ${email}`) == true) {
+            const formData = { name, category, phone, email, confirmation}
+            fetch("https://dream-weave-stations-server.vercel.app/addorders", {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(formData)
             })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    setIsLoading(false);
+                    toast.success('successfully Placed Order', {
+                        style: {
+                            zIndex: '99999999999 !important'
+                        }
+                    })
+                    
+                    setTimeout(() => {
+                        window.location.href = "https://dreamweavestations.com/";
+                    }, 500)
+
+
+                })
+        } else {
+            alert('canceled')
+            window.location.href = "https://dreamweavestations.com/";
+        }
+
     }
 
 
@@ -44,9 +55,10 @@ const Modal = () => {
         <div>
             <div className="flex justify-center">
 
+
                 <button onClick={() => document.getElementById('my_modal_2').showModal()} className="btn w-[150px] h-[10px] bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] text-white border-[#CFAB5B] scale-75">Book Now</button>
             </div>
-            <dialog id="my_modal_2" className="modal ">
+            <dialog id="my_modal_2" className="modal">
 
                 <div className="modal-box bg-gradient-to-r from-[#B83CB9] to-[#7C47E7] text-white">
                     <p className="text-lg font-semibold text-center">Please add order details here...</p>
@@ -105,7 +117,7 @@ const Modal = () => {
                             </div>
                             <div className="form-control mt-6">
                                 {
-                                    isLoading ? <button disabled className="btn btn-primary bg-[#CFAB5B]"><span className="loading loading-bars loading-md"></span></button> :
+                                    isLoading ? <button disabled className="btn btn-primary bg-[#CFAB5B]"><div className="w-5 h-5 border-4 border-dashed rounded-full animate-spin dark:border-violet-400"></div></button> :
                                         <button type="submit" className="btn btn-primary bg-[#CFAB5B]">Place Order</button>
                                 }
 
@@ -114,9 +126,12 @@ const Modal = () => {
                     </div>
 
                 </div>
+
+
                 <form method="dialog" className="modal-backdrop">
                     <button>close</button>
                 </form>
+
 
             </dialog>
 

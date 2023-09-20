@@ -1,4 +1,6 @@
+
 import Modal from "../Modal/Modal";
+
 
 const TopBanner = () => {
     return (
@@ -18,6 +20,7 @@ const TopBanner = () => {
                         </div>
                         <div data-aos="zoom-out-up" className="mt-2">
                             <Modal></Modal>
+                            
                         </div>
                     </div>
                     <img data-aos="flip-left" src="logo.png" className="w-[180px] h-[150px] lg:w-[278px] lg:h-[216px]" alt="" />
