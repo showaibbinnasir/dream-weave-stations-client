@@ -1,0 +1,24 @@
+[
+    {
+        "id" : "01",
+        "name" : "Durjoy Raihan",
+        "rating" : "4.5",
+        "des" : "Firstly I know this team personally,they are some of those real beasts you'll find out there.I worked on a project for one of my own startup.Since then I have worked with them again numerous times on multiple projects.Very easy to work with,understanding of customers' needs, and never complaints or give excuses.Looking forward to continuing to work with DreamWeave Station,all the very best lads.",
+        "image" : "customerone.png"
+    },
+    {
+        "id" : "02",
+        "name" : "Showaib bin Nasir",
+        "rating" : "4.5",
+        "des" : "Firstly I know this team personally,they are some of those real beasts you'll find out there.I worked on a project for one of my own startup.Since then I have worked with them again numerous times on multiple projects.",
+        "image" : "showaib.png"
+    },
+    {
+        "id" : "03",
+        "name" : "Samad Rifat",
+        "rating" : "4.5",
+        "des" : "Firstly I know this team personally,they are some of those real beasts you'll find out there.I worked on a project for one of my own startup.Since then I have worked with them again numerous times on multiple projects.",
+        "image" : "samad.png"
+    }
+    
+]

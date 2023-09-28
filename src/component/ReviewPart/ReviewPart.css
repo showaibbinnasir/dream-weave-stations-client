@@ -1,0 +1,8 @@
+.reviewcard{
+    height: 450px;
+    width: 350px;
+    background-image: url("../../../public/reviewbg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+

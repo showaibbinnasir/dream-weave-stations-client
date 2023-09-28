@@ -16,7 +16,11 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
+  box-shadow: none !important;
 
+}
+.swiper-slide-shadow-cards{
+  opacity: 0 !important;
 }
 
 @media only screen and (max-width:668px) {

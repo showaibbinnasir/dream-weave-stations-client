@@ -35,6 +35,7 @@ const Admin = () => {
 
                 })
         }else{
+            setIsLoading(false)
             refetch();
         }
 

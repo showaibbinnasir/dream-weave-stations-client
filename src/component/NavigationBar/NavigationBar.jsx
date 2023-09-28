@@ -14,6 +14,9 @@ const NavigationBar = () => {
                         <li><a href='#services' className="text-xl">Services</a></li>
                         <li><a href='#portfolio' className="text-xl">Portfolio</a></li>
                         <li><a href='#contact' className="text-xl">Contact</a></li>
+                        <li><Link to='/blogs' href='#contact' className="text-xl  textshadow">Blogs</Link></li>
+
+                        
 
                     </ul>
                 </div>
@@ -28,6 +31,7 @@ const NavigationBar = () => {
                     <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><a href='#services' className="text-xl textshadow">Services</a></li>
                     <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><a href='#portfolio' className="text-xl  textshadow">Portfolio</a></li>
                     <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><a href='#contact' className="text-xl  textshadow">Contact</a></li>
+                    <li  className=' hover:bg-[#CFAB5B] hover:rounded-lg'><Link to='/blogs' href='#contact' className="text-xl  textshadow">Blogs</Link></li>
                 </ul>
             </div>
             

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
-
+import emailjs from "@emailjs/browser"
 const Modal = () => {
     const [isLoading, setIsLoading] = useState(false);
 
@@ -19,7 +19,7 @@ const Modal = () => {
                     category : ${category}
                     phone : ${phone}
                     email : ${email}`) == true) {
-            const formData = { name, category, phone, email, confirmation}
+            const formData = { name, category, phone, email, confirmation }
             fetch("https://dream-weave-stations-server.vercel.app/addorders", {
                 method: 'POST',
                 headers: {
@@ -36,7 +36,7 @@ const Modal = () => {
                             zIndex: '99999999999 !important'
                         }
                     })
-                    
+
                     setTimeout(() => {
                         window.location.href = "https://dreamweavestations.com/";
                     }, 500)
@@ -49,6 +49,7 @@ const Modal = () => {
         }
 
     }
+    
 
 
     return (
@@ -87,13 +88,13 @@ const Modal = () => {
                                 <label className="label">
                                     <span className="label-text text-white">Your name</span>
                                 </label>
-                                <input type="text" name="name" placeholder="text" className="input input-bordered bg-white" />
+                                <input required type="text" name="name" placeholder="text" className="input input-bordered bg-white" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-white">Order Category</span>
                                 </label>
-                                <select name="category" className="select select-warning bg-white w-full max-w-xs">
+                                <select required name="category" className="select select-warning bg-white w-full max-w-xs">
                                     <option disabled selected>Select a Category</option>
                                     <option>Logo Design</option>
                                     <option>Banner Design</option>
@@ -107,13 +108,13 @@ const Modal = () => {
                                 <label className="label">
                                     <span className="label-text text-white">Your phone</span>
                                 </label>
-                                <input name="phone" type="text" placeholder="text" className="input input-bordered bg-white" />
+                                <input required name="phone" type="text" placeholder="text" className="input input-bordered bg-white" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-white">Your email</span>
                                 </label>
-                                <input name="email" type="email" placeholder="text" className="input input-bordered bg-white" />
+                                <input required name="email" type="email" placeholder="text" className="input input-bordered bg-white" />
                             </div>
                             <div className="form-control mt-6">
                                 {
