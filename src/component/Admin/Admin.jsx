@@ -36,6 +36,7 @@ const Admin = () => {
                 })
         }else{
             setIsLoading(false)
+            toast.success("Added Review")
             refetch();
         }
 

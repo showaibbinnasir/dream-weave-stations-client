@@ -1,0 +1,25 @@
+[{
+    "id" : "01",
+    "category" : "All blogs"
+
+},{
+    "id" : "02",
+    "category" : "Science"
+
+},{
+    "id" : "03",
+    "category" : "Economics"
+
+},{
+    "id" : "04",
+    "category" : "Sports"
+
+},{
+    "id" : "05",
+    "category" : "Games"
+
+},{
+    "id" : "06",
+    "category" : "Others"
+
+}]

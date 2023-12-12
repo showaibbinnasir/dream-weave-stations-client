@@ -1,6 +1,6 @@
-import { useState } from 'react';
+
 import './ReviewPart.css'
-import { useEffect } from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -11,17 +11,31 @@ import './swiperstyle.module.css';
 
 // import required modules
 import { EffectCards } from 'swiper/modules';
+import ReviewModal from '../Modal/ReviewModal';
+import { useQuery } from 'react-query';
 
 
 const ReviewPart = () => {
-    const [review, setReview] = useState([]);
-    useEffect(() => {
-        fetch("reviews.json")
-            .then(res => res.json())
-            .then(data => setReview(data))
-    }, [])
+    // const [review, setReview] = useState([]);
+    // useEffect(() => {
+    //     fetch("https://dream-weave-stations-server-showaibbinnasir.vercel.app/allreviews")
+    //         .then(res => res.json())
+    //         .then(data => setReview(data))
+    // }, [])
+    const uri = `https://dream-weave-stations-server-showaibbinnasir.vercel.app/allreviews`
+    // const data = useLoaderData();
+    const { data: data = [], refetch } = useQuery({
+        queryKey: ['completedtasks'],
+        queryFn: async () => {
 
-    console.log(review?.des?.length);
+            const res = await fetch(uri)
+            const data = await res.json();
+
+            return data;
+        }
+    })
+
+    console.log(data);
 
     return (
         <div>
@@ -38,12 +52,12 @@ const ReviewPart = () => {
                     className="mySwiper"
                 >
                     {
-                        review.map((data, i) => <SwiperSlide key={i}>
+                        data.map((data, i) => <SwiperSlide key={i}>
                             <div key={i} className='flex mx-5 justify-center mt-5'>
-                                <div className='reviewcard rounded-2xl shadow-xl flex items-center'>
-                                    <div>
+                                <div className='reviewcard rounded-2xl shadow-xl flex justify-center items-center'>
+                                    <div className=''>
                                         <div className='flex justify-center mt-5 mb-3'>
-                                            <img src={data.image} className='w-28' alt="" />
+                                            <img src={data.image} className='w-28 rounded-full' alt="" />
                                         </div>
                                         <h1 className='text-center text-xl font-semibold text-white'>{data.name}</h1>
                                         <h1 className='text-white font-medium text-center'>Rating: {data.rating}/5</h1>
@@ -56,8 +70,8 @@ const ReviewPart = () => {
 
                 </Swiper>
             </div>
-            <div className="flex justify-center my-2">
-                <button data-aos="fade-down-right" className="btn w-[150px] h-[10px] bg-gradient-to-r from-[#34256C] to-[#612E8D] text-white border-2 border-[#CFAB5B] mt-2">Submit Review</button>
+            <div data-aos="fade-down-right" className="flex justify-center my-2">
+                <ReviewModal refetch={refetch}></ReviewModal>
             </div>
 
         </div>

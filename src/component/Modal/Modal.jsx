@@ -1,6 +1,5 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
-import emailjs from "@emailjs/browser"
 const Modal = () => {
     const [isLoading, setIsLoading] = useState(false);
 
@@ -95,7 +94,7 @@ const Modal = () => {
                                     <span className="label-text text-white">Order Category</span>
                                 </label>
                                 <select required name="category" className="select select-warning bg-white w-full max-w-xs">
-                                    <option disabled selected>Select a Category</option>
+                                    <option disabled defaultValue="Select a Category">Select a Category</option>
                                     <option>Logo Design</option>
                                     <option>Banner Design</option>
                                     <option>Poster Design</option>
